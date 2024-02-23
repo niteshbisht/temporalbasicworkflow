@@ -1,0 +1,14 @@
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+spring.temporal:
+  namespace: wm-innovdev.k7mt4 # https://docs.temporal.io/cloud/#temporal-cloud-namespace-id
+  connection:
+    target: wm-innovdev.k7mt4.tmprl.cloud:7233
+    mtls:
+      key-file: C:/Users/Administrator/poc/temporalpoc-main/temporalpoc-main/out/wm-innovdev.pkcs8.key
+      cert-chain-file: C:/Users/Administrator/poc/temporalpoc-main/temporalpoc-main/out/wm-innovdev.crt
+
+# more configuration options https://github.com/temporalio/sdk-java/tree/master/temporal-spring-boot-autoconfigure-alpha#mtls
